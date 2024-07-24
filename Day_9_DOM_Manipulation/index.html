@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM-manipulation</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
         .box {
             width: 100px;
             height: 100px;
@@ -14,6 +34,10 @@
             display: inline-block;
             text-align: center;
             line-height: 100px;
+            border-radius: 10px;
+        }
+        .box:hover {
+            background-color: #ddd;
         }
 
         .highlight {
@@ -27,6 +51,29 @@
             border: 3px solid black;
             text-align: center;
             line-height: 200px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .hover-box:hover {
+            background-color: lightblue;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 5px 0;
+        }
+        #image {
+            display: block;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        #myParagraph {
+            font-size: 1.2em;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -34,38 +81,36 @@
 <body>
     <h1 id="tittle">Old tittle</h1>
     <p id="discription">This the old description</p>
-    <button onclick="changeContent()">Change for new things</button>
+    <button onclick="changeContent()">Change for new things</button><br><hr>
     
-
+    <button onclick="changeBackground()">Change Background Color</button>
     <div class="box">Box 1</div>
     <div class="box">Box 2</div>
     <div class="box">Box 3</div>
-
-    <button onclick="changeBackground()">Change Background Color</button>
-    <button onclick="removeElement()">RemoveElement</button>
+    <button onclick="removeElement()">RemoveElement</button><br><hr>
     
 
     <ul id="myList">
         <li>Existing item 1</li>
         <li>Existing item 2</li>
     </ul>
-    <button onclick="removeLastChild()">Remove last item</button>
+    <button onclick="removeLastChild()">Remove last item</button><br><hr>
     
 
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_c-mB3wULLhpdFqSL2w8-2v5I1Nu-bbLoUg&s" id="image"
         alt="nature">
-    <button onclick="imgChanger()">Change Image</button>
+    <button onclick="imgChanger()">Change Image</button><br><hr>
     
 
     <div id="Mydiv">This ia a my div</div>
     <button onclick="addHighlight()">add a highlight</button>
-    <button onclick="removeHighlight()">remove a highlght</button>
+    <button onclick="removeHighlight()">remove a highlght</button><br><hr>
    
 
     <p id="myParagraph">This is the Original text</p>
-    <button id="changeTextButton">Change the text</button><br><br>
+    <button id="changeTextButton">Change the text</button><br><hr>
 
-    <div id="hoverDiv" class="hover-box">Hover over me!</div>
+    <div id="hoverDiv" class="hover-box">Hover over me!</div><br><hr><br>
 
     <script src="Activities.js"></script>
 </body>
