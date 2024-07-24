@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-manipulation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightgray;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .hover-box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="tittle">Old tittle</h1>
+    <p id="discription">This the old description</p>
+    <button onclick="changeContent()">Change for new things</button>
+    
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <button onclick="changeBackground()">Change Background Color</button>
+    <button onclick="removeElement()">RemoveElement</button>
+    
+
+    <ul id="myList">
+        <li>Existing item 1</li>
+        <li>Existing item 2</li>
+    </ul>
+    <button onclick="removeLastChild()">Remove last item</button>
+    
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_c-mB3wULLhpdFqSL2w8-2v5I1Nu-bbLoUg&s" id="image"
+        alt="nature">
+    <button onclick="imgChanger()">Change Image</button>
+    
+
+    <div id="Mydiv">This ia a my div</div>
+    <button onclick="addHighlight()">add a highlight</button>
+    <button onclick="removeHighlight()">remove a highlght</button>
+   
+
+    <p id="myParagraph">This is the Original text</p>
+    <button id="changeTextButton">Change the text</button><br><br>
+
+    <div id="hoverDiv" class="hover-box">Hover over me!</div>
+
+    <script src="Activities.js"></script>
+</body>
+
+</html>
