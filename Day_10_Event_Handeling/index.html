@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Handeling</title>
+    <style>
+        #toggleImage {
+            display: block;
+            height: 100px;
+            width: 100px;
+            /* Ensure the image is initially visible */
+        }
+
+        #hoverElement,
+        #resetElement {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        #hoverElement {
+            background-color: lightblue;
+            /* Initial background color for hover element */
+        }
+
+        #resetElement {
+            background-color: lightcoral;
+            /* Initial background color for reset element */
+        }
+
+        /* Additional styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        select {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        #myList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #myList li {
+            padding: 8px;
+            background-color: #f4f4f4;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+        }
+
+        #parent {
+            margin-top: 20px;
+        }
+
+        .dynamic-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph">This is the old text content</p>
+    <button id="changeParagraph">Change text</button>
+
+    <img id="toggleImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTunTPkPm9t-YaC83QHOyAMHL-dj8nTcEmttQ&s" alt="monsoon">
+
+    <div id="hoverElement">Hover over me!</div>
+    <div id="resetElement">Reset my background color!</div>
+
+    <input type="text" id="inputField" placeholder="Type and check console...">
+
+    <input type="text" id="inputField1" placeholder="Type something...">
+    <p id="displayParagraph">Current value: </p>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <label for="mySelect">Choose an option:</label>
+    <select id="mySelect">
+        <option value="" disabled selected>Select an option</option>
+        <option value="Option1">Option 1</option>
+        <option value="Option2">Option 2</option>
+        <option value="Option3">Option 3</option>
+    </select>
+    <p id="displayParagraph1">Selected value will be displayed here.</p>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div id="parent">
+        <!-- Existing child elements -->
+        <button class="dynamic-button">Existing Button 1</button>
+        <button class="dynamic-button">Existing Button 2</button>
+    </div>
+    <button id="addButton">Add New Button</button>
+
+    <script src="Activities.js"></script>
+</body>
+</html>
