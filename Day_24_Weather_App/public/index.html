@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <div class="search">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="weather-info">
+                <h2 id="location">Location</h2>
+                <p id="temperature">Temperature: --°C</p>
+                <p id="description">Description: --</p>
+            </div>
+            <div id="forecast" class="forecast">
+                <!-- Forecast will be populated here -->
+            </div>
+        </main>
+        <footer>
+            <p>Weather App © 2024</p>
+        </footer>
+    </div>
+    <script src="Activities.js"></script>
+</body>
+</html>
