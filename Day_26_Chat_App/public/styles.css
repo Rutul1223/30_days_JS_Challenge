@@ -1,0 +1,162 @@
+/* Reset basic styles */
+body, h1, form, input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #181a1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* App container */
+#app {
+    background-color: #242526;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+    padding: 15px 20px;
+    border-bottom: 1px solid #47494a;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Messages container */
+#messages {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+    background: linear-gradient(135deg, #0f0f0f, #242526); /* Dark gradient background */
+    display: flex;
+    flex-direction: column-reverse; /* Align messages from the bottom upwards */
+}
+
+/* Individual message styles */
+.message {
+    max-width: 60%;
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    color: #e4e6eb;
+}
+
+/* Different colors for different users */
+.message.user1 {
+    background-color: #4a4b4c;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.message.user2 {
+    background-color: #007bff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+/* Usernames */
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #9a9b9c;
+}
+
+/* Form container */
+form {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #47494a;
+    background-color: #3a3b3c;
+}
+
+/* Input styles */
+input[type="text"] {
+    border: 1px solid #47494a;
+    border-radius: 25px;
+    padding: 12px 20px;
+    flex: 1;
+    font-size: 16px;
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+    margin-right: 10px;
+    transition: background-color 0.2s;
+}
+
+input[type="text"]:focus {
+    background-color: #484a4b;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for username input */
+#username-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#username-input {
+    border: 1px solid #47494a;
+    border-radius: 25px;
+    padding: 12px 20px;
+    flex: 1;
+    margin-right: 10px;
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+    transition: background-color 0.2s;
+}
+
+#username-input:focus {
+    background-color: #484a4b;
+}
+
+#join-button {
+    background-color: #007bff;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#join-button:hover {
+    background-color: #0056b3;
+}

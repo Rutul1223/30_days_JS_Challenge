@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Chat Application</h1>
+        </header>
+        <main>
+            <!-- Username Input -->
+            <div id="username-section">
+                <input type="text" id="username-input" placeholder="Enter your username" required>
+                <button id="join-button">Join Chat</button>
+            </div>
+            <div id="messages"></div>
+            <form id="chat-form">
+                <input type="text" id="message-input" placeholder="Type a message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+    <script src="Activities.js"></script>
+</body>
+</html>
